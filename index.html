@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary-black: #2D2D2D;
+            --color-soft-white: #FFFCF5;
+            --color-dark-yellow: #FFD285;
+            --font-epilogue: "Epilogue", sans-serif;
+      }
+
+      @layer utilities {
+            .font-epilogue {
+                font-family: var(--font-epilogue);
+            }
+      }
+    </style>
+
+    <title>Portfolio Art</title>
+</head>
+<body>
+    <div id="container" class="w-full bg-white">
+        <header id="navbar" class="w-full bg-white pt-8 mb-24">
+            <div class="w-full max-w-sm md:max-w-xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between">
+                <p class="font-epilogue text-2xl font-semibold">Logo</p>
+                <img src="./images/dot.svg" alt="" class="w-8 lg:hidden">
+                <div class="hidden lg:flex lg:flex-row lg:space-x-8 xl:space-x-14">
+                    <p class="font-epilogue text-md font-regular">About</p>
+                    <p class="font-epilogue text-md font-regular">Work</p>
+                    <p class="font-epilogue text-md font-regular">Contact</p>
+                </div>
+            </div>
+        </header>
+
+        <div id="hero" class="w-full bg-white mb-16 lg:mb-24">
+            <div class="w-full max-w-md lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-col space-y-12 lg:flex-row lg:justify-between lg:items-center lg:space-y-0">
+                <div class="w-full flex flex-col space-y-6 xl:space-y-12">
+                    <p class="font-epilogue font-semibold text-center lg:text-start">Branding | Image making</p>
+                    <p class="font-epilogue font-semibold text-center lg:text-start text-5xl xl:text-7xl">My Awesome Portfolio</p>
+                    <p class="font-epilogue font-light text-center lg:text-start text-xs max-w-xs lg:max-w-lg mx-auto lg:mx-0">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                </div>
+
+                <div class="w-full flex">
+                    <img src="./images/hero.png" alt="" class="w-90 mx-auto xl:w-120">
+                </div>
+            </div>
+        </div>
+
+        <div id="platform" class="w-full bg-white mb-16 lg:mb-40">
+            <div class="w-full max-w-xs lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-col space-y-16 lg:space-y-10">
+                <div class="w-full border-b-2 border-gray-300"></div>
+                <div class="w-full flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:space-x-24 lg:items-center">
+                    <div class="w-full flex flex-row lg:flex-row-reverse justify-between items-center">
+                        <img src="./images/google.png" alt="" class="w-35">
+                        <img src="./images/behance.png" alt="" class="h-10 lg:h-8">
+                    </div>
+                    <div class="w-full flex flex-row lg:flex-row-reverse justify-between items-center">
+                        <img src="./images/dribbble.png" alt="" class="w-50 h-10">
+                        <img src="./images/apple.png" alt="" class="h-10">
+                    </div>
+                    <img src="./images/awwwards.png" alt="" class="w-55 mx-auto lg:mx-0 lg:h-8">
+                </div>
+                <div class="w-full border-b-2 border-gray-300"></div>
+            </div>
+        </div>
+
+        <div id="skill" class="w-full bg-white mb-48">
+            <div class="w-full max-w-sm lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-col space-y-28 lg:flex-row lg:space-y-0 lg:space-x-10">
+                <div class="w-full flex flex-col space-y-8">
+                    <img src="./images/skill1.png" alt="" class="w-40 mx-auto mb-12">
+                    <p class="text-center font-epilogue font-semibold text-3xl">Product Design</p>
+                    <p class="text-center max-w-xs mx-auto font-epilogue font-light text-md">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                </div>
+                <div class="w-full flex flex-col space-y-8">
+                    <img src="./images/skill2.png" alt="" class="w-40 mx-auto mb-12">
+                    <p class="text-center font-epilogue font-semibold text-3xl">Product Design</p>
+                    <p class="text-center max-w-xs mx-auto font-epilogue font-light text-md">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                </div>
+                <div class="w-full flex flex-col space-y-8">
+                    <img src="./images/skill3.png" alt="" class="w-40 mx-auto mb-12">
+                    <p class="text-center font-epilogue font-semibold text-3xl">Product Design</p>
+                    <p class="text-center max-w-xs mx-auto font-epilogue font-light text-md">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="art" class="w-full bg-white mb-20 lg:mb-32">
+            <div class="w-full max-w-xs lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-col space-y-12">
+                <p class="text-center font-epilogue font-semibold text-3xl">Latest Work</p>
+                <div class="w-full grid gap-16 lg:grid-cols-3 lg:gap-14">
+                    <div class="w-full flex flex-col space-y-6">
+                        <img src="./images/art1.png" alt="">
+                        <div class="w-full flex flex-col space-y-2">
+                            <p class="font-epilogue font-semibold text-xl">Free Bird</p>
+                            <p class="font-epilogue font-light text-lg">Lynyrd Skynyrd</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex flex-col space-y-6">
+                        <img src="./images/art2.png" alt="">
+                        <div class="w-full flex flex-col space-y-2">
+                            <p class="font-epilogue font-semibold text-xl">Purple Haze</p>
+                            <p class="font-epilogue font-light text-lg">Jimi Hendrix</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex flex-col space-y-6">
+                        <img src="./images/art3.png" alt="">
+                        <div class="w-full flex flex-col space-y-2">
+                            <p class="font-epilogue font-semibold text-xl">You Really Got Me</p>
+                            <p class="font-epilogue font-light text-lg">The Kinks</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex flex-col space-y-6">
+                        <img src="./images/art4.png" alt="">
+                        <div class="w-full flex flex-col space-y-2">
+                            <p class="font-epilogue font-semibold text-xl">American Girl</p>
+                            <p class="font-epilogue font-light text-lg">Tom Petty</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex flex-col space-y-6">
+                        <img src="./images/art5.png" alt="">
+                        <div class="w-full flex flex-col space-y-2">
+                            <p class="font-epilogue font-semibold text-xl">Whole Lotta Love</p>
+                            <p class="font-epilogue font-light text-lg">Led Zeppelin</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex flex-col space-y-6">
+                        <img src="./images/art6.png" alt="">
+                        <div class="w-full flex flex-col space-y-2">
+                            <p class="font-epilogue font-semibold text-xl">Under Pressure</p>
+                            <p class="font-epilogue font-light text-lg">Queen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="client" class="w-full bg-white mb-24 lg:mb-36">
+            <div class="w-full max-w-xs lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-col space-y-12">
+                <p class="font-epilogue font-semibold text-3xl text-center">Clients</p>
+                <div class="w-full grid gap-12 lg:grid-cols-3">
+                    <div class="w-full bg-soft-white flex flex-col space-y-16 border border-dark-yellow p-6">
+                        <p class="font-epilogue font-regular text-lg">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                        <div class="flex flex-row space-x-4 items-center">
+                            <img src="./images/author1.png" alt="" class="w-14">
+                            <div class="flex flex-col space-y-2">
+                                <div class="flex flex-row space-x-1">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                </div>
+                                <p class="font-epilogue font-light text-sm">Gemma Nolen, Google</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full bg-soft-white flex flex-col space-y-16 border border-dark-yellow p-6">
+                        <p class="font-epilogue font-regular text-lg">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                        <div class="flex flex-row space-x-4 items-center">
+                            <img src="./images/author2.png" alt="" class="w-14">
+                            <div class="flex flex-col space-y-2">
+                                <div class="flex flex-row space-x-1">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                </div>
+                                <p class="font-epilogue font-light text-sm">Gemma Nolen, Google</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full bg-soft-white flex flex-col space-y-16 border border-dark-yellow p-6">
+                        <p class="font-epilogue font-regular text-lg">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                        <div class="flex flex-row space-x-4 items-center">
+                            <img src="./images/author3.png" alt="" class="w-14">
+                            <div class="flex flex-col space-y-2">
+                                <div class="flex flex-row space-x-1">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                    <img src="./images/star.svg" alt="" class="w-4">
+                                </div>
+                                <p class="font-epilogue font-light text-sm">Gemma Nolen, Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full max-w-xs lg:max-w-4xl xl:max-w-5xl border-b-2 border-gray-300 mx-auto mb-20"></div>
+
+    <footer class="w-full bg-white mb-16">
+        <div class="w-full max-w-xs lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-col space-y-20 lg:flex-row lg:space-y-0">
+            <div class="w-full flex flex-col space-y-8">
+                <p class="font-epilogue font-semibold text-3xl max-w-[180px] lg:max-w-full tracking-wider">Let's work together</p>
+                <p class="font-epilogue font-light text-md tracking-wide lg:max-w-sm">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="flex flex-row space-x-4 items-center">
+                    <img src="./images/discord-icon.svg" alt="" class="w-8">
+                    <img src="./images/facebook-icon.svg" alt="" class="w-10">
+                    <img src="./images/dribble-icon.svg" alt="" class="w-8">
+                    <img src="./images/instagram-icon.svg" alt="" class="w-8">
+                    <img src="./images/behance-icon.svg" alt="" class="w-8">
+                </div>
+            </div>
+            <div class="w-full flex flex-col space-y-6">
+                <input type="email" id="email" class="bg-[#F3F3F3] text-lg block w-full py-8 ps-8 placeholder:font-epilogue placeholder:font-regular placeholder:text-lg focus:outline-none" placeholder="Name" />
+                <input type="email" id="email" class="bg-[#F3F3F3] text-lg block w-full py-8 ps-8 placeholder:font-epilogue placeholder:font-regular placeholder:text-lg focus:outline-none" placeholder="Email" />
+                <textarea id="message" rows="8" class="block py-8 ps-8 w-full bg-[#F3F3F3] text-lg placeholder:font-epilogue placeholder:font-regular placeholder:text-lg focus:outline-none" placeholder="Type your message here" ></textarea>
+                <button class="bg-[#2D2D2D] text-white text-lg py-6 w-3/4 font-epilogue font-regular lg:w-1/2">Submit</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
